@@ -1,6 +1,6 @@
 {
   "name": "hypixel-zombies-fragbot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fragbot for Hypixel Zombies",
   "main": "index.js",
   "scripts": {

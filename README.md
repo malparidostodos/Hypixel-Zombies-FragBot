@@ -1,4 +1,4 @@
-# FragBot Multiclient
+# Hypixel Zombies FragBot
 
 A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
 
@@ -105,7 +105,4 @@ MIT License.
 
 ---
 
-### 🤖 Credits
-
-Bot created by [malparidostodos](https://github.com/malparidostodos)  
-Core features, optimizations & webhook/chat logic by [ChatGPT](https://openai.com/chatgpt)
+Thanks to ChatGPT for this ReadMe haha
