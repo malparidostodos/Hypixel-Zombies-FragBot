@@ -1,9 +1,8 @@
 # Hypixel Zombies FragBot
 
 <p align="center">
-  <width="40" style="vertical-align: middle;"/> **Need help? Add me on Discord: `123johan`**
+  **If you need help add me on Discord: `123johan`**
 </p>
-
 
 A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
 
