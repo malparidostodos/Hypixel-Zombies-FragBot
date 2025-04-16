@@ -1,8 +1,7 @@
 # Hypixel Zombies FragBot
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord" width="40" style="vertical-align: middle;"/>
-  <strong>Need help? Add me on Discord: `123johan`</strong>
+  <width="40" style="vertical-align: middle;"/> **Need help? Add me on Discord: `123johan`**
 </p>
 
 
