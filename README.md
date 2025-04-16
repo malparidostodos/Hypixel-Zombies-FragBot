@@ -17,11 +17,22 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
 - Sends notifications to a Discord webhook for each party invitation.
 
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361961123984965812/image.png?ex=6800a8a3&is=67ff5723&hm=525608550a8bd70a1d8308d1ff52b6cd37bc73cd60b56ef1dcde94c69f6d2761&" alt="Image 1" width="400">
-</p>
-
-<p align="center">
-  <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361964214419197963/image.png?ex=6800ab84&is=67ff5a04&hm=7fc462ff507edfeb5e192218503382ddbe472c5264bc3466afe26dc06aa833d5&" alt="Image 2" width="400">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361961123984965812/image.png?ex=6800a8a3&is=67ff5723&hm=525608550a8bd70a1d8308d1ff52b6cd37bc73cd60b56ef1dcde94c69f6d2761&" alt="Image 1" width="400">
+      </td>
+      <td align="center">
+        <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361964214419197963/image.png?ex=6800ab84&is=67ff5a04&hm=7fc462ff507edfeb5e192218503382ddbe472c5264bc3466afe26dc06aa833d5&" alt="Image 2" width="400">
+      </td>
+      <td align="center">
+        <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361968245187411978/dc2.png?ex=6800af45&is=67ff5dc5&hm=8bf06fb24ccb3291bfa1e8fb989a497d17875bcadaa3eabc18a6a3c0338f54c3&" alt="Image 2" width="400">
+      </td>
+      <td align="center">
+        <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361968433612460143/image.png?ex=6800af72&is=67ff5df2&hm=253b7f944c0b9f0f27560704931973754a982d07d29bf2a1781aae9a20c14360&" alt="Image 2" width="400">
+      </td>
+    </tr>
+  </table>
 </p>
 
 ## 📦 Installation
