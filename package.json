@@ -1,0 +1,16 @@
+{
+  "name": "fragbot-multicuenta",
+  "version": "1.0.0",
+  "description": "Fragbot para Zombies: Alien Arcadium en Hypixel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.16.1",
+    "mineflayer-pathfinder": "^2.1.2",
+    "prismarine-nbt": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.1"
+  }
+}
