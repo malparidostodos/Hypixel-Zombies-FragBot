@@ -1,5 +1,7 @@
 # Hypixel Zombies FragBot
 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord" width="20" style="vertical-align: middle;"/> **Need help? Add me on Discord: `123johan`**
+
 A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
 
 ## 🚀 Features
@@ -29,7 +31,7 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
 
 3. Configure the bot:
 
-   - Add your Microsoft accounts in `accounts.json`:
+   - Add your Microsoft accounts in `utils/accounts.json`:
      ```json
      [
        { 
@@ -41,7 +43,7 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
      ]
      ```
 
-   - Add allowed igns (in-game names) in `whitelist.json` (users the bot will accept party invites from):
+   - Add allowed igns (in-game names) in `utils/whitelist.json` (users the bot will accept party invites from):
      ```json
      [
        "IGN1",
@@ -49,14 +51,14 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
      ]
      ```
 
-   - Add your Discord webhook URL in `webhook.json`:
+   - Add your Discord webhook URL in `utils/webhook.json`:
      ```json
      {
        "url": "https://discord.com/api/webhooks/..."
      }
      ```
 
-   - (Optional) Edit the file `glMessages.json` to customize the random messages the bot will send when a match starts:
+   - (Optional) Edit the file `utils/glMessages.json` to customize the random messages the bot will send when a match starts:
      ```json
      [
        "GL! ^-^",
@@ -72,7 +74,7 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
      ]
      ```
 
-   - Ensure you manually add your bot usernames (exact in-game names) to `invitationCounts.json` like this:
+   - Ensure you manually add your bot usernames (exact in-game names) to `utils/invitationCounts.json` like this:
      ```json
      {
        "BotUsername1": 0,
@@ -88,10 +90,12 @@ Start the bot with:
 npm start
 ```
 
+> ℹ️ The first time you run the bot, each account will prompt you to log in with a Microsoft authentication code. Open the link provided in the console and enter the code to authorize the account. The bot won't work until this step is completed.
+
 The bots will:
 
 - Login to Hypixel.
-- Accept party invites from users listed in `whitelist.json`.
+- Accept party invites from users listed in `utils/whitelist.json`.
 - Join the party and the Zombies minigame.
 - Send countdown and random GL messages.
 - Automatically leave and go to limbo after the game starts.
