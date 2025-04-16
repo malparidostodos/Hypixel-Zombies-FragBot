@@ -108,7 +108,6 @@ function createBot({ username }, index) {
           bot.chat(`/party chat Thanks for inviting me! (${invitationCounts[bot.username]})`);
         }, 500);
 
-        // Save the updated count
         saveInvitationCounts(invitationCounts);
 
         sendToWebhook(`✅ **${bot.username}** was invited to a party by **${inviter}** (direct invite). (${invitationCounts[bot.username]})`);
@@ -122,7 +121,6 @@ function createBot({ username }, index) {
         console.log(`[BOT ${index}] Accepting group party invite from ${inviter}`);
         bot.chat(`/party accept ${inviter}`);
 
-        // Ensure the bot has an invitation count
         if (!invitationCounts[bot.username]) {
           invitationCounts[bot.username] = 0;
         }
@@ -139,7 +137,6 @@ function createBot({ username }, index) {
       }
     }
 
-    // Countdown
     if (msg.includes("the game starts in")) {
       const seconds = rawMsg.match(/starts in (\d+) seconds?/i);
       if (seconds) {

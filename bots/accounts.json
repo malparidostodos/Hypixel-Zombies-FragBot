@@ -2,5 +2,8 @@
 [
   {
       "username": "example@example.com"
-  }
+  },
+  {
+    "username": "example@example.com"
+}
 ]

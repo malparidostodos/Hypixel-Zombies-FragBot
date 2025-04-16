@@ -32,8 +32,12 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
    - Add your Microsoft accounts in `accounts.json`:
      ```json
      [
-       { "username": "example1@example.com" },
-       { "username": "example2@example.com" }
+       { 
+         "username": "example1@example.com" 
+       },
+       { 
+         "username": "example2@example.com" 
+       }
      ]
      ```
 
