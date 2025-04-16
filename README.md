@@ -1,6 +1,10 @@
 # Hypixel Zombies FragBot
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord" width="20" style="vertical-align: middle;"/> **Need help? Add me on Discord: `123johan`**
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" alt="Discord" width="40" style="vertical-align: middle;"/>
+  <strong>Need help? Add me on Discord: `123johan`</strong>
+</p>
+
 
 A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
 
@@ -92,20 +96,7 @@ npm start
 
 > ℹ️ The first time you run the bot, each account will prompt you to log in with a Microsoft authentication code. Open the link provided in the console and enter the code to authorize the account. The bot won't work until this step is completed.
 
-The bots will:
-
-- Login to Hypixel.
-- Accept party invites from users listed in `utils/whitelist.json`.
-- Join the party and the Zombies minigame.
-- Send countdown and random GL messages.
-- Automatically leave and go to limbo after the game starts.
-
-## 🧠 Tech Stack
-
-- [mineflayer](https://github.com/PrismarineJS/mineflayer) — Bot framework for Minecraft.
-- Node.js (v16+ recommended).
-- Local JSON-based state tracking.
-- Microsoft authentication for bot accounts.
+At this points you can play.
 
 ## 📄 License
 
