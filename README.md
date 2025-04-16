@@ -4,7 +4,7 @@
   Need help? Add me on Discord: 123johan
 </p>
 
-A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
+I made this bot bc Zombies dc servers are a bit garbage and I didn't want to use their bots, also I got bored of opening 3 launchers just for a couple of games lmao.
 
 ## 🚀 Features
 
