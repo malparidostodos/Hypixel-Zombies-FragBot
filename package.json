@@ -1,16 +1,28 @@
 {
-  "name": "fragbot-multicuenta",
-  "version": "1.0.0",
-  "description": "Fragbot para Zombies: Alien Arcadium en Hypixel",
+  "name": "hypixel-zombies-fragbot",
+  "version": "1.0.1",
+  "description": "Fragbot for Hypixel Zombies",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "author": "malparidostodos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malparidostodos/Hypixel-Zombies-FragBot.git"
+  },
+  "keywords": [
+    "minecraft",
+    "hypixel",
+    "fragbot",
+    "mineflayer",
+    "zombies",
+    "alien-arcadium",
+    "bot",
+    "multiclient"
+  ],
   "dependencies": {
-    "mineflayer": "^4.16.1",
-    "mineflayer-pathfinder": "^2.1.2",
-    "prismarine-nbt": "^2.0.1",
-    "dotenv": "^16.0.3",
-    "fs-extra": "^11.1.1"
+    "mineflayer": "^4.16.1"
   }
 }

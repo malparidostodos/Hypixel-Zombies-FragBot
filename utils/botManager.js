@@ -1,9 +1,7 @@
 const mineflayer = require("mineflayer");
-const fs = require("fs");
 const whitelist = require("../whitelist.json");
 
 function createBot({ username }, index) {
-  console.log(`[Bot ${index}] Autenticando con ${username}`);
 
   const bot = mineflayer.createBot({
     host: "mc.hypixel.net",
