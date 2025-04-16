@@ -1,7 +1,7 @@
 # Hypixel Zombies FragBot
 
 <p align="center">
-  Need help? Add me on Discord: `123johan`
+  Need help? Add me on Discord: 123johan
 </p>
 
 A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to automate the **Zombies** minigame on Hypixel using multiple Minecraft accounts simultaneously.
@@ -15,6 +15,14 @@ A bot built with [Mineflayer](https://github.com/PrismarineJS/mineflayer) to aut
 - Automatically sends the bots to limbo after joining the party.
 - Uses Microsoft authentication for login.
 - Sends notifications to a Discord webhook for each party invitation.
+
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361961123984965812/image.png?ex=6800a8a3&is=67ff5723&hm=525608550a8bd70a1d8308d1ff52b6cd37bc73cd60b56ef1dcde94c69f6d2761&" alt="Image 1" width="400">
+</p>
+
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/844689737410281484/1361964214419197963/image.png?ex=6800ab84&is=67ff5a04&hm=7fc462ff507edfeb5e192218503382ddbe472c5264bc3466afe26dc06aa833d5&" alt="Image 2" width="400">
+</p>
 
 ## 📦 Installation
 
