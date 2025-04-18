@@ -1,10 +1,11 @@
 const mineflayer = require("mineflayer");
-const whitelist = require("./whitelist.json");
+const whitelist = require("../admin/whitelist.json");
 const { url: webhookUrl, dmUrl } = require("./webhook.json");
 const https = require("https");
 const fs = require("fs");
 const path = require("path");
 const glMessages = require("./glMessages.json");
+const adminList = require("../admin/admin.json");
 
 const invitationCountsPath = path.join(__dirname, 'invitationCounts.json');
 
@@ -313,11 +314,17 @@ function createBot({ username }, index) {
             bot.chat(`/party chat Status: ${location} ${partyInfo}`);
             break;
 
-          case "!stay":
-            const newStay = !bot.stayMode;
-            bots.forEach(b => b.stayMode = newStay);
-            bot.chat(`/party chat 🧷 Stay mode: ${newStay ? "Enabled" : "Disabled"}`);
-            break;
+            case "!stay":
+              // Verifica si el usuario que envía el comando está en la lista de administradores
+              if (!adminList.includes(sender)) {
+                bot.chat(`/party chat ❌ You don't have permission to use this command.`);
+                return;
+              }
+    
+              const newStay = !bot.stayMode;
+              bots.forEach(b => b.stayMode = newStay);
+              bot.chat(`/party chat 🧷 Stay mode: ${newStay ? "Enabled" : "Disabled"}`);
+              break;
 
           case "!gl":
             const newStatus = !bot.glEnabled;
