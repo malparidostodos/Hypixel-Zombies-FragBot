@@ -302,8 +302,21 @@ function createBot({ username }, index) {
 
         switch (command) {
           case "!help":
-            bot.chat("/party chat Commands: !help - !status - !stay - !gl");
-            break;
+            const stayStatus = bot.stayMode ? "Enabled" : "Disabled";
+            const glStatus = bot.glEnabled ? "Enabled" : "Disabled";
+          
+            const helpMessages = [
+              `➜ Available commands:`,
+              `!help — Shows available commands`,
+              `!status — Shows location and party status`,
+              `!stay (${stayStatus}) — Toggles whether the bots stay in game or leave after it starts`,
+              `!gl (${glStatus}) — Toggles “Good luck” messages before the match`
+            ];
+          
+            helpMessages.forEach((msg, i) => {
+              setTimeout(() => bot.chat(`/party chat ${msg}`), i * 500);
+            });
+            break;      
 
           case "!status":
             let location = "Lobby";
