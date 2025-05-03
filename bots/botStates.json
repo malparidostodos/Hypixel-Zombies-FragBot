@@ -1,0 +1,14 @@
+{
+  "V_____________V": {
+    "stayMode": true,
+    "glEnabled": true,
+    "language": "es",
+    "helpBot": false
+  },
+  "holismalparidos": {
+    "stayMode": true,
+    "glEnabled": true,
+    "language": "es",
+    "helpBot": true
+  }
+}
