@@ -2,13 +2,19 @@
   "V_____________V": {
     "stayMode": true,
     "glEnabled": true,
-    "language": "es",
+    "language": "en",
     "helpBot": false
   },
   "holismalparidos": {
     "stayMode": true,
     "glEnabled": true,
-    "language": "es",
+    "language": "en",
     "helpBot": true
+  },
+  "liaamx_x": {
+    "stayMode": true,
+    "glEnabled": true,
+    "language": "en",
+    "helpBot": false
   }
 }
