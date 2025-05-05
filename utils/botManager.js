@@ -233,30 +233,6 @@ function createBot({ username, language = 'en' }, index, activePartiesRef) {
         }
     }, 300000);
 
-    bot.on('error', err => {
-        console.error(`[BOT ${index}] Error:`, err);
-        sendToDMWebhook(`🚨 **${bot.username}** encountered an error: ${err}`);
-        bot.inParty = false;
-        bot.joinedGame = false;
-        bot.inLimbo = false;
-        if (bot.invitedBy && activeParties[bot.invitedBy]) {
-            activeParties[bot.invitedBy].bots = activeParties[bot.invitedBy].bots.filter(b => b.username !== bot.username);
-            if (activeParties[bot.invitedBy].bots.length === 0) {
-                delete activeParties[bot.invitedBy];
-            } else if (activeParties[bot.invitedBy].helpBotAssigned && activeParties[bot.invitedBy].helpBot === bot.username) {
-                activeParties[bot.invitedBy].helpBotAssigned = false;
-                delete activeParties[bot.invitedBy].helpBot;
-            }
-        }
-        bot.invitedBy = null;
-        bot.helpBot = false;
-        bot.isDesignatedHelpBot = false;
-        console.log(`[BOT ${index}] Attempting to reconnect in 10 seconds...`);
-        setTimeout(() => {
-            createBot({ username: bot.username, language: bot.currentLanguage }, index, activeParties);
-        }, 10000);
-    });
-
     bot.on("message", (jsonMsg) => {
         const raw = jsonMsg.toString().replace(/\n/g, " ");
         const msg = raw.toLowerCase();
@@ -420,7 +396,7 @@ function createBot({ username, language = 'en' }, index, activePartiesRef) {
                                 bot.chat("/lobby");
                                 bot.joinedGame = false;
                             }
-                        }, 1000);
+                        }, 1500);
                     }, Math.floor(Math.random() * 500));
                 }
             }
@@ -599,7 +575,7 @@ function createBot({ username, language = 'en' }, index, activePartiesRef) {
         }, 5000);
     });
 
-    bot.on("error", (err) => {
+    bot.on('error', err => {
         console.error(`[BOT ${index}] Error:`, err);
         sendToDMWebhook(`🚨 **${bot.username}** encountered an error: ${err}`);
         bot.inParty = false;
@@ -617,6 +593,7 @@ function createBot({ username, language = 'en' }, index, activePartiesRef) {
         bot.invitedBy = null;
         bot.helpBot = false;
         bot.isDesignatedHelpBot = false;
+        console.log(`[BOT ${index}] Attempting to reconnect in 10 seconds...`);
         setTimeout(() => {
             createBot({ username: bot.username, language: bot.currentLanguage }, index, activeParties);
         }, 10000);
